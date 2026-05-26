@@ -180,12 +180,12 @@ export default function Home() {
       </div>
 
       {/* Right */}
-      <div className="relative flex items-center justify-center h-[320px] mt-10 lg:h-[480px]">
+      <div className="relative mx-auto mt-8 flex h-[260px] w-full max-w-[320px] items-center justify-center lg:h-[480px] lg:max-w-none">
         <div className="relative z-10 w-72 rotate-2 overflow-hidden rounded-3xl shadow-2xl transition-transform duration-500 hover:rotate-0">
           <img
             src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=800"
             alt="Featured products"
-            className="h-80 w-full object-cover"
+            className="h-52 w-full object-cover lg:h-80"
           />
           <div className="bg-white p-4">
             <p className="text-xs font-semibold text-green-600">🛍️ New Arrivals</p>

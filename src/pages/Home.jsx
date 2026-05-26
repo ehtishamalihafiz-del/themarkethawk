@@ -180,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* Right */}
-      <div className="relative hidden h-[480px] items-center justify-center lg:flex">
+      <div className="relative flex items-center justify-center h-[320px] mt-10 lg:h-[480px]">
         <div className="relative z-10 w-72 rotate-2 overflow-hidden rounded-3xl shadow-2xl transition-transform duration-500 hover:rotate-0">
           <img
             src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=800"

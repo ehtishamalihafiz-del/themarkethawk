@@ -107,7 +107,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-green-950 via-green-900 to-emerald-800 px-4 pt-8 pb-14 md:min-h-[88vh] md:px-0 md:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-green-950 via-green-900 to-emerald-800 px-4 pt-10 pb-16 md:min-h-[88vh] md:px-0 md:py-20">
   {/* Background decorations */}
   <div className="pointer-events-none absolute inset-0 h-full overflow-hidden">
     <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-green-500/20 blur-3xl md:-top-32 md:-right-32 md:h-96 md:w-96" />
@@ -180,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* Right */}
-      <div className="relative mx-auto mt-8 flex h-[260px] w-full max-w-[320px] items-center justify-center lg:h-[480px] lg:max-w-none">
+      <div className="relative hidden lg:flex items-center justify-center h-[480px]">
         <div className="relative z-10 w-72 rotate-2 overflow-hidden rounded-3xl shadow-2xl transition-transform duration-500 hover:rotate-0">
           <img
             src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=800"

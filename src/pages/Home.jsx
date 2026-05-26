@@ -107,7 +107,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-[88vh] overflow-hidden bg-gradient-to-br from-green-950 via-green-900 to-emerald-800">
+      <section className="relative min-h-[520px] md:min-h-[88vh] overflow-hidden bg-gradient-to-br from-green-950 via-green-900 to-emerald-800">
 
         {/* Background decorations */}
         <div className="pointer-events-none absolute inset-0">

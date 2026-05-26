@@ -134,7 +134,7 @@ export default function Home() {
           🇵🇰 Pakistan's Trusted COD Store
         </div>
 
-        <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-7xl">
+        <h1 className="text-5xl font-black leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
           Trendy Products
           <span className="block bg-gradient-to-r from-green-300 via-emerald-300 to-teal-300 bg-clip-text text-transparent">
             Delivered to
@@ -142,7 +142,7 @@ export default function Home() {
           Your Door
         </h1>
 
-        <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-green-100/80 md:mt-6 md:text-lg lg:mx-0">
+        <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-green-100/80 md:mt-6 md:text-lg lg:mx-0">
           Order from your mobile. Confirm on WhatsApp. Pay cash when the parcel arrives.
           No account needed — 100% hassle-free.
         </p>
@@ -172,8 +172,8 @@ export default function Home() {
         <div className="mt-8 grid grid-cols-2 gap-4 border-t border-white/10 pt-6 sm:grid-cols-4 md:mt-12 md:pt-10">
           {[['10K+', 'Happy Customers'], ['500+', 'Products'], ['48hr', 'Avg Delivery'], ['100%', 'Authentic']].map(([val, lbl]) => (
             <div key={lbl} className="text-center">
-              <div className="text-xl font-black text-white md:text-2xl">{val}</div>
-              <div className="mt-0.5 text-xs font-medium text-green-300/70">{lbl}</div>
+              <div className="text-2xl font-black text-white md:text-2xl">{val}</div>
+              <div className="mt-0.5 text-sm font-medium text-green-300/70">{lbl}</div>
             </div>
           ))}
         </div>

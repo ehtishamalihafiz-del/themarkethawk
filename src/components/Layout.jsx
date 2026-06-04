@@ -31,12 +31,12 @@ export default function Layout() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
 
-      <div className="w-full bg-gradient-to-r from-green-700 via-emerald-700 to-green-700 py-2 text-center text-xs font-semibold text-white tracking-wide">
+      <div className="w-screen max-w-none bg-gradient-to-r from-green-700 via-emerald-700 to-green-700 py-2 text-center text-xs font-semibold text-white tracking-wide">
         🚚 Free Delivery on Orders Above Rs. 5,000 · 🇵🇰 Cash on Delivery Available Nationwide
       </div>
 
       <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'bg-white shadow-lg shadow-gray-200/60' : 'bg-white/95 backdrop-blur-md'}`}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 lg:px-8">
+        <div className="flex w-screen max-w-none items-center justify-between px-4 py-3">
 
           <Link to="/" className="group flex items-center gap-2 focus:outline-none">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-emerald-700 shadow-md">

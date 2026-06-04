@@ -96,7 +96,7 @@ export default function ProductDetail() {
                     </div>
                 )}
 
-                
+
 
                 {/* Trust strip below image */}
                 <div className="grid grid-cols-3 gap-3">
@@ -171,16 +171,7 @@ export default function ProductDetail() {
                     </div>
 
                     {/* Description — ✅ p.description unchanged */}
-                    {p.description && (
-                        <div className="mt-5 rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <h3 className="mb-2 text-base font-bold text-gray-900">
-                                Product Description
-                            </h3>
-                            <p className="whitespace-pre-line leading-relaxed text-gray-600">
-                                {p.description}
-                            </p>
-                        </div>
-                    )}
+
 
                     {/* Stock status — ✅ p.stock_status unchanged */}
                     <div className="mt-4 flex items-center gap-2">
@@ -221,6 +212,12 @@ export default function ProductDetail() {
                             Buy Now
                         </Link>
                     </div>
+                   
+
+                    <div className="mt-6 bg-gray-50 border rounded-2xl p-5">
+                        <h2 className="font-bold mb-3">Product Description</h2>
+                        <p className="whitespace-pre-line">{p.description}</p>
+                    </div>
 
                     {/* WhatsApp order nudge */}
                     <a
@@ -240,7 +237,7 @@ export default function ProductDetail() {
                 </div>
             </div>
         </div>
-        
+
     )
 }
 

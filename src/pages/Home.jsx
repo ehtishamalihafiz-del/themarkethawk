@@ -157,7 +157,7 @@ export default function Home() {
           </button>
 
           <a
-            href="https://wa.me/923001234567?text=Hello!%20I%20want%20to%20place%20an%20order%20on%20PakDrop."
+            href="https://wa.me/923254128541?text=Hello!%20I%20want%20to%20place%20an%20order%20on%20PakDrop."
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-7 py-3 text-base font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:scale-105 md:px-8 md:py-4"
@@ -640,7 +640,7 @@ const CATEGORIES = [
           {/* WhatsApp CTA */}
           <div className="mt-14 text-center">
             <a
-              href="https://wa.me/923001234567?text=Hello!%20I%20want%20to%20place%20an%20order."
+              href="https://wa.me/923254128541?text=Hello!%20I%20want%20to%20place%20an%20order."
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-3 rounded-2xl bg-green-400 px-8 py-4 text-base font-bold text-green-950 shadow-xl transition-all duration-200 hover:bg-green-300 hover:scale-105"
@@ -718,7 +718,7 @@ const CATEGORIES = [
             <p className="font-semibold text-gray-900">Still have a question?</p>
             <p className="mt-1 text-sm text-gray-500">Our support team is available Mon–Sat, 9AM–9PM.</p>
             <a
-              href="https://wa.me/923001234567"
+              href="https://wa.me/923254128541"
               target="_blank"
               rel="noreferrer"
               className="mt-4 inline-flex items-center gap-2 rounded-xl bg-green-600 px-6 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-green-700 hover:scale-105"
@@ -758,7 +758,7 @@ const CATEGORIES = [
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </button>
             <a
-              href="https://wa.me/923001234567?text=Hello!%20I%20want%20to%20shop%20from%20PakDrop."
+              href="https://wa.me/923254128541?text=Hello!%20I%20want%20to%20shop%20from%20PakDrop."
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-2xl border-2 border-white/40 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:scale-105"

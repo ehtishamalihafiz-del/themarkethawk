@@ -99,7 +99,7 @@ export default function Layout() {
       </main>
 
       <footer className="mt-auto w-full bg-gray-950 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <main className="w-full max-w-full flex-1 overflow-x-hidden px-4 py-6 sm:px-6 lg:px-8">
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <Link to="/" className="mb-4 inline-flex items-center gap-2">

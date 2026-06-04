@@ -157,7 +157,7 @@ export default function Home() {
           </button>
 
           <a
-            href="https://wa.me/923254128541?text=Hello!%20I%20want%20to%20place%20an%20order%20on%20PakDrop."
+            href="https://api.whatsapp.com/send?phone=923254128541"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-7 py-3 text-base font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:scale-105 md:px-8 md:py-4"

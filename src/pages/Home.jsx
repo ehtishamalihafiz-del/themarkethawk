@@ -758,7 +758,7 @@ const CATEGORIES = [
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </button>
             <a
-              href="https://wa.me/923254128541?text=Hello!%20I%20want%20to%20shop%20from%20themarkethawk."
+              href="whatsapp://send?phone=923254128541&text=Hello%20I%20want%20to%20order%20from%20The%20Market%20Hawk"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-2xl border-2 border-white/40 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:scale-105"

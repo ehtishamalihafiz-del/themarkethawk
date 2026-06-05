@@ -94,7 +94,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-6 sm:px-6 lg:px-8">
+      <main className="w-full max-w-full overflow-x-hidden flex-1 px-4 py-6 sm:px-6 lg:px-8">
         <Outlet />
       </main>
 
@@ -111,7 +111,7 @@ export default function Layout() {
               <p className="text-sm text-gray-400">Pakistan's trusted Cash on Delivery store.</p>
             </div>
           </div>
-        </div>
+        </main>
       </footer>
 
       <a

@@ -29,7 +29,7 @@ export default function Cart() {
 
   return (
     <div className="mx-auto max-w-6xl">
-      <div className="mb-8 flex items-center justify-between">
+      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-4xl font-black text-gray-900">My Cart</h1>
           <p className="mt-1 text-sm text-gray-500">
@@ -45,7 +45,7 @@ export default function Cart() {
         </Link>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
+      <div className="grid gap-6 lg:grid-cols-[1fr_360px] overflow-x-hidden">
         <div className="space-y-4">
           {cart.map(i => (
             <CartItem
@@ -67,8 +67,8 @@ export default function Cart() {
 
 function CartItem({ item: i, onChangeQty, onRemove }) {
   return (
-    <div className="group flex gap-4 overflow-hidden rounded-2xl border border-gray-100 bg-white p-4 shadow-sm transition-all duration-200 hover:border-green-200 hover:shadow-md sm:p-5">
-      <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 sm:h-28 sm:w-28">
+    <div className="group flex w-full max-w-full gap-3 overflow-hidden rounded-2xl border border-gray-100 bg-white p-3 shadow-sm sm:gap-4 sm:p-5">
+      <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 sm:h-28 sm:w-28">
         <img
           src={i.image_url}
           alt={i.name}
@@ -76,12 +76,15 @@ function CartItem({ item: i, onChangeQty, onRemove }) {
         />
       </div>
 
-      <div className="flex flex-1 flex-col justify-between min-w-0">
+      <div className="flex min-w-0 flex-1 flex-col justify-between">
         <div className="flex items-start justify-between gap-2">
-          <div className="min-w-0">
-            <h3 className="truncate font-bold text-gray-900">{i.name}</h3>
+          <div className="min-w-0 flex-1">
+            <h3 className="line-clamp-2 break-all text-sm font-bold text-gray-900 sm:text-base">
+              {i.name}
+            </h3>
+
             {i.category && (
-              <span className="mt-0.5 inline-block text-xs font-semibold uppercase tracking-wide text-green-600">
+              <span className="mt-1 inline-block text-xs font-semibold uppercase tracking-wide text-green-600">
                 {i.category}
               </span>
             )}
@@ -96,29 +99,32 @@ function CartItem({ item: i, onChangeQty, onRemove }) {
           </button>
         </div>
 
-        <div className="mt-3 flex items-center justify-between gap-4">
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-1 rounded-xl border border-gray-200 bg-gray-50 p-1">
             <button
               onClick={() => onChangeQty(i.id, -1)}
-              className="flex h-8 w-8 items-center justify-center rounded-lg text-lg font-bold text-gray-700 transition-all hover:bg-white hover:text-green-700 hover:shadow-sm active:scale-90"
+              className="flex h-8 w-8 items-center justify-center rounded-lg text-lg font-bold text-gray-700 transition-all hover:bg-white hover:text-green-700"
             >
               −
             </button>
+
             <span className="w-8 text-center text-sm font-black text-gray-900">
               {i.quantity}
             </span>
+
             <button
               onClick={() => onChangeQty(i.id, 1)}
-              className="flex h-8 w-8 items-center justify-center rounded-lg text-lg font-bold text-gray-700 transition-all hover:bg-white hover:text-green-700 hover:shadow-sm active:scale-90"
+              className="flex h-8 w-8 items-center justify-center rounded-lg text-lg font-bold text-gray-700 transition-all hover:bg-white hover:text-green-700"
             >
               +
             </button>
           </div>
 
-          <div className="text-right">
-            <p className="text-base font-black text-gray-900">
+          <div className="min-w-0 text-right">
+            <p className="text-sm font-black text-gray-900 sm:text-base">
               {currency(i.price * i.quantity)}
             </p>
+
             {i.quantity > 1 && (
               <p className="text-xs text-gray-400">
                 {currency(i.price)} each
@@ -166,14 +172,14 @@ function OrderSummary({ total, itemCount }) {
 
         <Link
           to="/checkout"
-          className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-green-600 py-4 text-base font-bold text-white shadow-md transition-all duration-200 hover:bg-green-700 hover:shadow-lg hover:shadow-green-200 hover:scale-[1.02] active:scale-95"
+          className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-green-600 px-2 py-4 text-sm font-bold text-white whitespace-nowrap sm:text-base"
         >
           <ShieldCheck className="h-5 w-5" />
           Checkout — Cash on Delivery
         </Link>
 
         <a
-          href={`https://wa.me/${import.meta.env.VITE_ADMIN_WHATSAPP || ''}?text=${encodeURIComponent('Hi! I want to place a COD order.')}`}
+          href={`https://api.whatsapp.com/send?phone=923254128541&text=${encodeURIComponent('Hi! I want to place a COD order.')}`}
           target="_blank"
           rel="noreferrer"
           className="mt-3 flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 py-3 text-sm font-semibold text-gray-600 transition-all hover:border-green-300 hover:bg-green-50 hover:text-green-700"

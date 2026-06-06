@@ -14,6 +14,7 @@ import Contact from './pages/Contact.jsx'
 import Policy from './pages/Policy.jsx'
 import AdminLogin from './pages/AdminLogin.jsx'
 import AdminDashboard from './pages/AdminDashboard.jsx'
+import { Toaster } from 'react-hot-toast'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -27,7 +28,8 @@ function ScrollToTop() {
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <ScrollToTop />
+  <Toaster position="bottom-center" />
+  <ScrollToTop />
     <CartProvider>
       <Routes>
         <Route element={<Layout />}>

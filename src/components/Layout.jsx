@@ -114,14 +114,7 @@ export default function Layout() {
         </main>
       </footer>
 
-      <a
-        href={`https://wa.me/${import.meta.env.VITE_ADMIN_WHATSAPP || ''}`}
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-xl"
-      >
-        <MessageCircle className="h-7 w-7" />
-      </a>
+      
     </div>
   )
 }

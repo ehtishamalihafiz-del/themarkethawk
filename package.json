@@ -7,17 +7,18 @@
   "dependencies": {
     "@supabase/supabase-js": "latest",
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
+    "emailjs-com": "latest",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-hot-toast": "^2.6.0",
     "react-router-dom": "latest",
-    "lucide-react": "latest",
-    "emailjs-com": "latest"
+    "vite": "latest"
   },
   "devDependencies": {
-    "tailwindcss": "3.4.17",
+    "autoprefixer": "latest",
     "postcss": "latest",
-    "autoprefixer": "latest"
+    "tailwindcss": "3.4.17"
   },
   "type": "module"
 }

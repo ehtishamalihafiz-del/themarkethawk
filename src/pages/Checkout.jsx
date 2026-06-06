@@ -78,7 +78,7 @@ export default function Checkout() {
     }
 
     return (
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto w-full max-w-6xl px-4 overflow-hidden">
             <div className="mb-8">
                 <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-sm font-semibold text-green-700">
                     Almost there!
@@ -87,10 +87,10 @@ export default function Checkout() {
                 <p className="mt-1 text-gray-500">Fill in your details below — pay cash when your order arrives.</p>
             </div>
 
-            <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
-                <form onSubmit={submit} className="space-y-6">
+            <div className="grid w-full grid-cols-1 gap-8 xl:grid-cols-[minmax(0,1fr)_380px]">
+                <form onSubmit={submit} className="min-w-0 space-y-6">
                     <FormSection icon={User} title="Personal Details">
-                        <div className="grid gap-4 sm:grid-cols-2">
+                        <div className="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
                             <InputField icon={User} required name="customer_name" placeholder="Full name" onChange={set} />
                             <InputField icon={Phone} required name="phone" placeholder="Phone number" type="tel" onChange={set} />
                         </div>
@@ -145,7 +145,7 @@ export default function Checkout() {
                     </p>
                 </form>
 
-                <div className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+                <div className="min-w-0 space-y-4 xl:sticky xl:top-24 xl:self-start">
                     <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
                         <h2 className="mb-4 text-lg font-black text-gray-900">Order Summary</h2>
 
